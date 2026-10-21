@@ -2,6 +2,8 @@ import { redirect } from 'next/navigation';
 import { getSession } from '@/lib/auth';
 import ChallanForm from '@/components/ChallanForm';
 
+export const dynamic = 'force-dynamic';
+
 export default async function NewChallanPage() {
   const session = await getSession();
 

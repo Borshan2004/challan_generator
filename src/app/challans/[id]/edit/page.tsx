@@ -3,6 +3,8 @@ import { prisma } from '@/lib/prisma';
 import { getSession } from '@/lib/auth';
 import ChallanForm from '@/components/ChallanForm';
 
+export const dynamic = 'force-dynamic';
+
 export default async function EditChallanPage({
   params,
 }: {

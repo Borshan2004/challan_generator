@@ -3,6 +3,8 @@ import { prisma } from '@/lib/prisma';
 import { getSession } from '@/lib/auth';
 import ChallanPrintPreview from '@/components/ChallanPrintPreview';
 
+export const dynamic = 'force-dynamic';
+
 export default async function ChallanDetailPage({
   params,
 }: {
